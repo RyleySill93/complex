@@ -16,7 +16,7 @@ after_success:
   - docker build -t ryleysill/complex-server ./server
 
   - docker login -u="$DOCKER_ID" -p="$DOCKER_PASSWORD"
-  - docker push ryleysill/multi-client
-  - docker push ryleysill/multi-nginx
-  - docker push ryleysill/multi-server
-  - docker push ryleysill/multi-worker
+  - docker push ryleysill/complex-client
+  - docker push ryleysill/complex-nginx
+  - docker push ryleysill/complex-server
+  - docker push ryleysill/complex-worker
